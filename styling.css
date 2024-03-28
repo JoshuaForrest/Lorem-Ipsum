@@ -1,0 +1,156 @@
+body {
+    color:#000000;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Open Sans',Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#ffffff;
+}
+
+#Outer {
+    text-align: center;
+}
+
+#Inner {
+    width: 960px;
+    margin: 0 auto
+}
+
+#Translation {
+    text-align: left;
+    margin: 0 3%
+}
+
+#Languages a {
+padding: 2px;
+font-size: 12px;
+line-height: 10px;
+}
+
+div#Panes {
+    margin-top: 15px
+}
+
+#Panes>div {
+    width: 45.5%;
+    text-align: left;
+}
+
+#Panes>br {
+    clear: both
+}
+
+#Panes>div:nth-of-type(odd) {
+    float: left;
+    margin: 0 1.5% 0 3%
+}
+
+#Panes>div:nth-of-type(even) {
+    float: right;
+    margin: 0 3% 0 1.5%
+}
+
+a:active, a:link, a:visited {
+    color:#000000;
+}
+a:hover {
+    color:#e10303;
+}
+
+h1, h2 {
+    font-weight: 400;
+    font-family: Dauphin;
+}
+
+h3, h4, h5 {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 90px;
+    text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 10px;  
+}
+
+h3 {
+    margin: 15px 0;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 700;
+}
+
+h4 {
+    margin: 10px 10px 5px 10px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    font-style: italic;
+}
+
+h5 {
+    margin: 5px 10px 20px 10px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;  
+}
+
+p {
+    text-align: justify;
+    margin: 0 0 15px 0;
+}
+
+hr {
+    clear: both;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,.75),rgba(0,0,0,0));
+}
+
+.boxed {
+    clear: both;
+    margin: 10px 3% 10px 3%;
+}
+
+.boxed img {
+    margin: 10px 5px 0 5px;
+    border: 0
+}
+
+.boxedTight {
+    clear: both;
+    margin: 10px 3% 10px 3%
+}
+
+.boxedTight img {
+    margin: 0;
+    border: 0
+}
+
+a.lnk:active,a.lnk:hover,a.lnk:link,a.lnk:visited {
+    font-weight: 700;
+    color: #e10303;
+}
+
+#pmLink {
+    visibility: hidden;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+#pmLink:hover {
+    visibility: visible;
+    color: #d00;
+}
