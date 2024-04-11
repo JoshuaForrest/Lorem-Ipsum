@@ -1,0 +1,308 @@
+$color_1: #000000;
+$color_2: #e10303;
+$color_3: #000;
+$color_unused: rgba(255, 110, 110);
+$color_unused2: #73fff8;
+$color_button: #fca9ff;
+$color_buttonHover: #f66ffb;
+$color_sass: #f66ffb;
+$color_sass2: #fdc5ff;
+$color_sass3: #0015ff;	
+$color_sass4: #a5acf9;
+$color_sassLink: #ffff00;
+$color_sassLinkHover: #ff7b00;
+$font-family_1: 'Open Sans',Arial,sans-serif;
+$font-family_2: Dauphin;
+$font-family_3: "Open Sans", Arial, sans-serif;
+$font-family_4: French Script MT;
+$font-family_5: Tw Cen MT;
+$background-color_1: #ffffff;
+$background-color_sBanner: #737fff;	
+$background-color_sContent: #fca8ff;
+
+body {
+	color: $color_1;
+	font-size: 14px;
+	line-height: 20px;
+	font-family: $font-family_1;
+	margin: 0;
+	padding: 0;
+	background-color: $background-color_1;
+}
+#Outer {
+	text-align: center;
+}
+#Inner {
+	width: 960px;
+	margin: 0 auto;
+}
+#Translation {
+	text-align: left;
+	margin: 0 3%;
+}
+#Languages {
+	a {
+		padding: 2px;
+		font-size: 12px;
+		line-height: 10px;
+	}
+}
+div#Panes {
+	margin-top: 15px;
+}
+#Panes {
+	>div {
+		width: 45.5%;
+		text-align: left;
+		&:nth-of-type(odd) {
+			float: left;
+			margin: 0 1.5% 0 3%;
+		}
+		&:nth-of-type(even) {
+			float: right;
+			margin: 0 3% 0 1.5%;
+		}
+	}
+	>br {
+		clear: both;
+	}
+}
+a {
+	&:active {
+		color: $color_1;
+	}
+	&:link {
+		color: $color_1;
+	}
+	&:visited {
+		color: $color_1;
+	}
+	&:hover {
+		color: $color_2;
+	}
+}
+h1 {
+	font-weight: 400;
+	font-family: $font-family_2;
+	font-size: 70px;
+	line-height: 90px;
+	text-align: center;
+}
+h2 {
+	font-weight: 400;
+	font-family: $font-family_2;
+	font-size: 24px;
+	line-height: 24px;
+	text-align: left;
+	margin-bottom: 10px;
+}
+h3 {
+	font-weight: 400;
+	margin: 15px 0;
+	font-size: 14px;
+	text-align: left;
+	font-weight: 700;
+}
+h4 {
+	font-weight: 400;
+	margin: 10px 10px 5px 10px;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	font-style: italic;
+}
+h5 {
+	font-weight: 400;
+	margin: 5px 10px 20px 10px;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+}
+p {
+	text-align: justify;
+	margin: 0 0 15px 0;
+}
+hr {
+	clear: both;
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,.75),rgba(0,0,0,0));
+}
+.boxed {
+	clear: both;
+	margin: 10px 3% 10px 3%;
+	img {
+		margin: 10px 5px 0 5px;
+		border: 0;
+	}
+}
+.boxedTight {
+	clear: both;
+	margin: 10px 3% 10px 3%;
+	img {
+		margin: 0;
+		border: 0;
+	}
+}
+a.lnk {
+	&:active {
+		font-weight: 700;
+		color: $color_2;
+	}
+	&:hover {
+		font-weight: 700;
+		color: $color_2;
+	}
+	&:link {
+		font-weight: 700;
+		color: $color_2;
+	}
+	&:visited {
+		font-weight: 700;
+		color: $color_2;
+	}
+}
+#pmLink {
+	visibility: hidden;
+	font-family: $font-family_3;
+	font-size: 14px;
+	color: $color_3;
+	text-decoration: none;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	&:hover {
+		visibility: visible;
+		color: $color_2;
+	}
+}
+.button-container {
+	text-align: center;
+#expandButton {
+	padding: 10px 20px;
+	background: $color_button;
+	color: black;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+}
+#expandButton:hover {
+	background: $color_buttonHover;
+}
+}
+.hidden {
+    display: none;
+}
+@mixin banner {
+	background-color: $background-color_sBanner;
+	border-top: 4px solid $color_sass2;
+	border-bottom: 4px solid $color_sass2;
+	h1 {
+		font-family: $font-family_4;
+		font-weight: 1;
+		margin: 0;
+		padding: 0;
+		animation: colorCycle 5s infinite;
+	}
+	h4 {
+		font-family: $font-family_5;
+		font-size: 20px;
+		color: $color_sass;
+	}
+	h5 {
+		font-family: $font-family_5;
+		font-size: 18px;
+		color: $color_sass;
+	}
+}
+@mixin sassPanes {
+	background-color: $background-color_sContent;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0;
+	#sassPanes {
+		>div {
+			width: 45.5%;
+			text-align: left;
+			&:nth-of-type(odd) {
+				float: left;
+				margin: 0 1.5% 0 3%;
+			}
+			&:nth-of-type(even) {
+				float: right;
+				margin: 0 3% 0 1.5%;
+			}
+		}
+	}
+	h2 {
+		font-weight: 1;
+		font-family: $font-family_4;
+		font-size: 36px;
+		line-height: 24px;
+		text-align: left;
+		margin-bottom: 10px;
+		animation: colorCycleContent 5s infinite;
+	}
+	p {
+		text-align: justify;
+		margin: 0 0 15px 0;
+		color: $color_sass3;
+	}
+}
+@mixin sassBox {
+	background-color: $background-color_sContent;
+	text-align: center;
+	color: $color_sass3;
+	clear: both;
+	margin: 10px 3% 10px 3%;
+	a.lnk {
+		font-weight: 700;
+		color: $color_sassLink;
+		&:hover {
+		  color: $color_sassLinkHover;
+		}
+	}
+}
+.sassBanner {
+	@include banner;
+}
+.sassBody {
+	background-color: $background-color_sContent;
+	hr {
+		clear: both;
+		border: 0;
+		height: 1px;
+		max-width: 960px;
+		background-image: linear-gradient(to right, #0015ff00, $color_sass3, #0015ff00);
+	}
+}
+.sassContent {
+	@include sassPanes
+}
+.sassBoxed {
+	@include sassBox
+}
+@keyframes colorCycle {
+	0% {
+		color: $color_sass;
+	}
+	50% {
+		color: $color_sass2;
+	}
+	100% {
+		color: $color_sass;
+	}
+}
+@keyframes colorCycleContent {
+	0% {
+		color: $color_sass3;
+	}
+	50% {
+		color: $color_sass4;
+	}
+	100% {
+		color: $color_sass3;
+	}
+}
